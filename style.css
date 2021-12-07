@@ -1,4 +1,103 @@
-p{
-    border: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+}
+
+.title{
+    margin-left: 30px;
+}
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #1f3757 0%,
+        #131537 100%
+      );
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.scoreboard{
+    width: 700px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score{
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    
+}
+
+.score h1{
+    color: #565468;
+    font-size: 56px;
+
+}
+
+.score p{
+    color: #2a45c2 ;
+    font-size: 20px;
+    font-weight: 900; 
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    
+}
+
+.hands{
+    height:430px ;
+    width: 476px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url("/images/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scissors{
+    margin-left: 20px;
+
+}
+
+.paper{
+    margin-right: 20px;
+    
+}
+
+
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.hands .hand:hover{
+    transform: translate3d(0px,-8px,0px);
 }
