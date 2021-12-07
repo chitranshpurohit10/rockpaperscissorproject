@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -32,17 +31,25 @@
               <img src="/images/Rock.png" onclick="pickUserHand('rock')"/>                        
             </div>
       </div>
-
-      <div class="contest">
+      <div class="contest">       
         <div class="userhand">
-          <h1>You Picked</h1>
-          <div class="handImageContainer">
-            <img src="/images" alt="">
-          </div>
-
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+              <img id="userPickImage" src="/images/Paper.png">
+            </div>
         </div>
-      </div>
-  </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+            <h1>THE HOUSE PICKED</h1>
+            <div class="handImageContainer">
+              <img id="computerPickImage" src='/images/Paper.png' /> 
+            </div>   
+        </div>       
+      </div>        
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
-
